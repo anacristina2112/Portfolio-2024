@@ -1,0 +1,6 @@
+header {
+    background: #b5e2f5; /*o css está abreviando o código hexadecimal Cor de fundo do cabeçalho */
+    color: #fff; /* cor do texto no cabeçalho */
+    padding: 1rem; /* Espaçamento interno */
+    text-align: center; /* Alinha o texto ao centro */
+}

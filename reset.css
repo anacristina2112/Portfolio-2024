@@ -1,0 +1,6 @@
+/*  limpar preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui bordas e preenchimentos na largura e altura dos elementos */
+}
