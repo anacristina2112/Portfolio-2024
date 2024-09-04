@@ -1,0 +1,9 @@
+/* Estilizando o rodapé */
+footer {
+    background: #b5e2f5; 
+    color: #120303; 
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 1rem; /* Espaçamento interno */
+    position: relative; /* Faz o rodapé se ajustar ao final do conteúdo e não alterar mais o posicionamento */
+    width: auto; /* Largura total */
+}

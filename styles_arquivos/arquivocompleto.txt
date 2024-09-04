@@ -1,0 +1,112 @@
+indexresponsivo.html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles_arquivos/styles.css">
+     <!-- todos os arquivos css, estão dentro da pasta styles_arquivos, com excessão do arquivo reset-->
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+    </header>
+    <main>
+        <section>
+            <h2>serviços oferecidos</h2>
+            <p>Coloque uma descrição do site.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; nome do autor aqui</p>
+    </footer>
+</body>
+</html>
+
+arquivo reset.css
+/*  limpar preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui bordas e preenchimentos na largura e altura dos elementos */
+}
+
+
+
+arquivo styles.css 
+/* Importando  os arquivos de cabeçalho e rodapé */
+
+@import url('header.css');
+@import url('footer.css');
+
+/* estilizando o layout, do corpo da página  */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte para o corpo */
+    line-height: 1.6; /* Ajusta a altura da linha para melhor legibilidade */
+    background-color: #f4f4f4; /* Define a cor de fundo da página */
+}
+
+/* Estilizando o conteúdo principal que está dentro do main */
+main {
+    padding: 1rem; /* Espaçamento interno ao redor do conteúdo */
+    margin-bottom: 3rem; /* Espaço abaixo do conteúdo para garantir que o conteúdo não sobreponha o rodapé */
+}
+
+/* Estilizando as seções dentro do main */
+section {
+    margin-bottom: 1rem; /* Espaço entre seções */
+}
+
+/* Estilos responsivos para telas com largura mínima de 600px */
+@media (min-width: 600px) {
+    body {
+        max-width: auto; /*largura automática do corpo */
+        margin: 0 auto; /* Centraliza o corpo da pagina(direita e esquerda) */
+    }
+}
+
+/* Estilos responsivos para telas com largura mínima de 900px */
+@media (min-width: 900px) {
+    main {
+        display: flex; /* Utiliza Flexbox para o layout do conteúdo principal */
+        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+        align-items: center; /* Centraliza o conteúdo verticalmente */
+        height: 75vh; /* Define a altura como 75% da altura da janela de visualização */
+    }
+
+    section {
+        max-width: 800px; /* Limita a largura máxima das seções, na horinzontal */
+        text-align: center; /* Alinha o texto ao centro */
+    }
+}
+
+/* Ajustes específicos para rodapé em telas pequenas (menos de 600px) */
+@media (max-width: 599px) {
+    footer {
+        font-size: 0.875rem; /* Reduz o tamanho da fonte para melhorar a legibilidade em telas pequenas */
+        padding: 0.75rem; /* Ajusta o padding para telas pequenas */
+    }
+}
+
+arquivo header.css
+header {
+    background: #b5e2f5; /*o css está abreviando o código hexadecimal Cor de fundo do cabeçalho */
+    color: #fff; /* cor do texto no cabeçalho */
+    padding: 1rem; /* Espaçamento interno */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+
+footer.css
+/* Estilizando o rodapé */
+footer {
+    background: #b5e2f5; 
+    color: #120303; 
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 1rem; /* Espaçamento interno */
+    position: relative; /* Faz o rodapé se ajustar ao final do conteúdo e não alterar mais o posicionamento */
+    width: auto; /* Largura total */
+}
+
